@@ -1,0 +1,66 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+/* Base Styles */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hero Background */
+.hero-bg {
+    background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.4);
+    transform: scale(1.1);
+}
+
+/* Animations */
+.animate-bounce-slow {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-10px); 
+    }
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(to right, #ffffff, #e5e5e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Hover Effects */
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.sport-card:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Navigation Scroll Effect */
+.nav-scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+}
+
+.nav-scrolled a:not(.btn-apply) {
+    color: #000 !important;
+}
+
+.nav-scrolled .logo {
+    color: #000 !important;
+}
