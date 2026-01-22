@@ -23,7 +23,7 @@
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <div class="logo">
-                <img src="/images/chanceletes-logo.png" alt="Chanceletes" class="h-12">
+                <img src="/images/chanceletes-logo.png" alt="Chanceletes" class="h-24">
             </div>
             <div class="flex gap-8 items-center">
                 <a href="#mission" class="nav-link text-sm font-bold hover:text-gray-600 transition-colors tracking-wide text-black">Mission</a>
@@ -37,10 +37,10 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <!-- Parallax Background Container -->
-        <div id="hero-parallax" class="absolute inset-0 transition-transform duration-100 ease-out" style="transform: scale(1);">
-            <div class="absolute inset-0 hero-bg"></div>
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+        <!-- Parallax Image Container -->
+        <div id="hero-parallax" class="absolute inset-0 transition-transform duration-100 ease-out flex items-center justify-center" style="transform: scale(1);">
+            <img src="/images/chancelete-hero.png" alt="Chancelete Hero" class="w-full h-full object-contain">
         </div>
 
         <!-- Modern Scroll Indicator -->
@@ -410,7 +410,7 @@
                 </div>
             </div>
 
-            <a href="mailto:apply@chanceletes.org" class="inline-flex items-center gap-4 bg-white text-black px-16 py-6 text-2xl font-black hover:bg-gray-200 transition-all hover-scale rounded-full">
+            <a href="/cdn-cgi/l/email-protection#f29382829e8bb2919a939c91979e97869781dc9d8095" class="inline-flex items-center gap-4 bg-white text-black px-16 py-6 text-2xl font-black hover:bg-gray-200 transition-all hover-scale rounded-full">
                 Begin Application
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -450,9 +450,9 @@
                 <div>
                     <h4 class="font-black mb-4 text-white">Contact</h4>
                     <div class="space-y-2 text-gray-400">
-                        <p><a href="mailto:info@chanceletes.org">info@chanceletes.org</a></p>
-                        <p><a href="mailto:apply@chanceletes.org">apply@chanceletes.org</a></p>
-                        <p><a href="mailto:support@chanceletes.org">support@chanceletes.org</a></p>
+                        <p><a href="/cdn-cgi/l/email-protection#e28b8c848da2818a838c81878e87968791cc8d9085"><span class="__cf_email__" data-cfemail="86efe8e0e9c6e5eee7e8e5e3eae3f2e3f5a8e9f4e1">[email&#160;protected]</span></a></p>
+                        <p><a href="/cdn-cgi/l/email-protection#9afbeaeaf6e3daf9f2fbf4f9fff6ffeeffe9b4f5e8fd"><span class="__cf_email__" data-cfemail="177667677b6e57747f767974727b7263726439786570">[email&#160;protected]</span></a></p>
+                        <p><a href="/cdn-cgi/l/email-protection#55262025253a272115363d343b363039302130267b3a2732"><span class="__cf_email__" data-cfemail="42313732322d303602212a232c21272e273627316c2d3025">[email&#160;protected]</span></a></p>
                     </div>
                 </div>
             </div>
@@ -463,7 +463,7 @@
         </div>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Hero parallax zoom effect
         const heroParallax = document.getElementById('hero-parallax');
         
@@ -526,19 +526,4 @@
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
                 
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const deltaX = (x - centerX) / centerX;
-                const deltaY = (y - centerY) / centerY;
-                
-                this.style.transform = `perspective(1000px) rotateY(${deltaX * 5}deg) rotateX(${-deltaY * 5}deg)`;
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
-            });
-        });
-    </script>
-</body>
-</html>
+                const cen

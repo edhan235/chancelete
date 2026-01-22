@@ -12,15 +12,6 @@ h2.font-black {
     letter-spacing: 0.05em !important;
 }
 
-/* Hero Background */
-.hero-bg {
-    background-image: url('/images/chancelete-hero.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    filter: none;
-}
-
 /* Animations */
 .animate-bounce-slow {
     animation: bounce 2s infinite;
