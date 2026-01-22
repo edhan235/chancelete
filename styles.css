@@ -12,6 +12,14 @@ h2.font-black {
     letter-spacing: 0.05em !important;
 }
 
+/* Hero Background - Shows full image without cropping */
+.hero-bg {
+    background-image: url('chancelete-hero.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 /* Animations */
 .animate-bounce-slow {
     animation: bounce 2s infinite;
