@@ -147,7 +147,7 @@ h2.font-black {
     background-image: url('/images/chancelete-hero.png');
     background-size: cover;
     background-position: center;
-    filter: blur(8px) brightness(0.4);
+    filter: brightness(0.7);
     transform: scale(1.1);
 }
 
