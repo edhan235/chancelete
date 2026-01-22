@@ -1,0 +1,13 @@
+# Chancelete.org - Robots.txt
+# We welcome all search engines to help student-athletes find us!
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Sitemap location (update this URL once you add a sitemap)
+Sitemap: https://chancelete.org/sitemap.xml
+
+# Crawl-delay (optional - be nice to servers)
+# User-agent: *
+# Crawl-delay: 1
