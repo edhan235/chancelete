@@ -145,7 +145,7 @@ h2.font-black {
 /* Hero Background */
 .hero-bg {
     background-image: url('/images/chancelete-hero.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     filter: brightness(0.7);
     transform: scale(1.1);
