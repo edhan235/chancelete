@@ -1,11 +1,11 @@
 
-athlete-stack.png
-chancelete-hero.png
+/images/athlete-stack.png
+/images/chancelete-hero.png
 
 index.html
 html
 
-chanceletes-logo.png
+/images/chanceletes-logo.png
 
 styles.css
 79 lines
@@ -144,7 +144,7 @@ h2.font-black {
 
 /* Hero Background */
 .hero-bg {
-    background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1920&h=1080&fit=crop');
+    background-image: url('/images/chancelete-hero.png');
     background-size: cover;
     background-position: center;
     filter: blur(8px) brightness(0.4);
