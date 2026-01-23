@@ -779,16 +779,26 @@ strong {
         padding: 80px 0;
     }
 
-    .chevron-stack {
+.chevron-stack {
     display: flex;
     flex-direction: column;
-    gap: -4px;
+    gap: 2px;
     animation: chevron-move 2s ease-in-out infinite;
 }
 
+.chevron-stack svg {
+    display: block;
+}
+
 @keyframes chevron-move {
-    0%, 100% { transform: translateY(0); opacity: 0.5; }
-    50% { transform: translateY(8px); opacity: 1; }
+    0%, 100% { 
+        transform: translateY(0); 
+        opacity: 0.5; 
+    }
+    50% { 
+        transform: translateY(8px); 
+        opacity: 1; 
+    }
 }
 
 }
