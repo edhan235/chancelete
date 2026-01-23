@@ -8,9 +8,8 @@ if (hamburger && navLinks) {
         navLinks.classList.toggle('active');
     });
     
-    // Close menu when clicking nav links
-    const allNavLinks = document.querySelectorAll('.nav-link, .btn-apply');
-    allNavLinks.forEach(link => {
+    // Close menu when clicking on nav links
+    document.querySelectorAll('.nav-link, .btn-apply').forEach(link => {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');

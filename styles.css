@@ -116,20 +116,23 @@ strong {
     transform: scale(1.05);
 }
 
-/* Hamburger Menu Button */
+/* Hamburger Menu */
 .hamburger {
     display: none;
     flex-direction: column;
     gap: 6px;
+    background: none;
+    border: none;
     cursor: pointer;
     padding: 8px;
 }
 
 .hamburger span {
+    display: block;
     width: 28px;
     height: 3px;
     background: #000;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     border-radius: 2px;
 }
 
@@ -798,11 +801,12 @@ strong {
 }
 
 @media (max-width: 768px) {
-    /* Hamburger Menu */
+    /* Show hamburger */
     .hamburger {
         display: flex;
     }
     
+    /* Hide nav-links by default, show as dropdown when active */
     .nav-links {
         position: fixed;
         top: 54px;
@@ -811,18 +815,19 @@ strong {
         background: #fff;
         flex-direction: column;
         gap: 0;
-        padding: 20px 0;
+        padding: 0;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         max-height: 0;
         overflow: hidden;
         opacity: 0;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
         z-index: 999;
     }
     
     .nav-links.active {
-        max-height: 500px;
+        max-height: 400px;
         opacity: 1;
+        padding: 20px 0;
     }
     
     .nav-link {
@@ -837,34 +842,9 @@ strong {
         text-align: center;
     }
     
+    /* Fix logo size - smaller on mobile */
     .logo img {
         height: 24px;
-    }
-    
-    /* Hero - fit image without black space */
-    .hero {
-        height: auto;
-        min-height: 50vh;
-    }
-    
-    .hero-parallax {
-        position: relative;
-        height: auto;
-    }
-    
-    .hero-bg {
-        position: relative;
-        height: 0;
-        padding-bottom: 62.5%;
-        background-size: contain;
-        background-position: center;
-    }
-    
-    .scroll-indicator {
-        position: relative;
-        bottom: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
     
     h2 {
