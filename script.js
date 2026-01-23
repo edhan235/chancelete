@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
     
     // Parallax zoom effect for hero (zooms in as you scroll down)
     if (scrollTop < windowHeight) {
-        const scale = 1 + (scrollTop / windowHeight) * 0.3;
+        const scale = 1 + (scrollTop / windowHeight) * 0.7;
         heroParallax.style.transform = `scale(${scale})`;
     }
 });
