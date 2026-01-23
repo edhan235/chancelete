@@ -847,9 +847,9 @@ strong {
         height: 24px;
     }
     
-    /* Fix hero - set height to match 16:10 image aspect ratio */
+    /* Fix hero - taller height to show full image with designed black space */
     .hero {
-        height: 62.5vw; /* Width is 100vw, so 100vw * (10/16) = 62.5vw for 16:10 ratio */
+        height: 80vw; /* Taller to show complete image including black space */
     }
     
     h2 {
