@@ -561,17 +561,17 @@ strong {
 .commitment-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 2px;
     margin-bottom: 60px;
 }
 
 .commitment-card {
     background: #000;
     color: #fff;
-    padding: 24px;
+    padding: 12px;
     border-radius: 12px;
     display: flex;
-    gap: 12px;
+    gap: 6px;
     align-items: flex-start;
     transition: transform 0.3s;
 }
