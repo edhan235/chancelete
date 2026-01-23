@@ -1,12 +1,10 @@
-// Hero parallax zoom effect
-const heroParallax = document.getElementById('hero-parallax');
-
 // Hamburger menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-if (hamburger) {
-    hamburger.addEventListener('click', function() {
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
@@ -18,7 +16,18 @@ if (hamburger) {
             navLinks.classList.remove('active');
         });
     });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
 }
+
+// Hero parallax zoom effect
+const heroParallax = document.getElementById('hero-parallax');
 
 window.addEventListener('scroll', function() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
