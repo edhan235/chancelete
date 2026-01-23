@@ -570,20 +570,11 @@ strong {
     color: #fff;
     padding: 48px;
     border-radius: 16px;
-    display: flex;
-    gap: 24px;
     transition: transform 0.3s;
 }
 
 .commitment-card:hover {
     transform: translateY(-8px);
-}
-
-.commitment-icon {
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-    stroke: #fff;
 }
 
 .commitment-card h3 {
