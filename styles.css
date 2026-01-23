@@ -561,7 +561,7 @@ strong {
 .commitment-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
+    gap: 30px;
     margin-bottom: 60px;
 }
 
@@ -569,9 +569,9 @@ strong {
     background: #000;
     color: #fff;
     padding: 48px;
-    border-radius: 12px;
+    border-radius: 16px;
     display: flex;
-    gap: 100px;
+    gap: 5px;
     align-items: flex-start;
     transition: transform 0.3s;
 }
