@@ -847,6 +847,30 @@ strong {
         height: 24px;
     }
     
+    /* Fix hero - remove black space, fit image to width */
+    .hero {
+        height: auto;
+        min-height: auto;
+    }
+    
+    .hero-parallax {
+        position: relative;
+    }
+    
+    .hero-bg {
+        position: relative;
+        height: 0;
+        padding-bottom: 62.5%; /* 16:10 aspect ratio of your image */
+        background-size: contain;
+        background-position: center;
+    }
+    
+    .scroll-indicator {
+        position: relative;
+        bottom: auto;
+        margin: 30px 0;
+    }
+    
     h2 {
         font-size: 42px;
     }
