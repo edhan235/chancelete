@@ -107,7 +107,7 @@ strong {
     font-size: 14px;
     font-weight: 900;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 4px;
     transition: background 0.3s, transform 0.3s;
 }
 
@@ -788,6 +788,229 @@ strong {
     margin-top: 30px;
     color: #aaa;
     font-size: 16px;
+}
+
+/* Application Form Page */
+.section-apply-form {
+    padding: 150px 0 100px;
+    background: #fff;
+    min-height: 80vh;
+}
+
+.form-intro {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.form-message {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+    font-size: 16px;
+    margin: 0;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 16px;
+    border-radius: 8px;
+    border-left: 4px solid #dc3545;
+    font-size: 16px;
+    margin: 0;
+}
+
+.application-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.btn-submit {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 18px 32px;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-submit:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.form-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Thank You Page */
+.section-thank-you {
+    padding: 150px 0 100px;
+    background: #fff;
+    min-height: 80vh;
+}
+
+.thank-you-box {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 40px;
+    background: #f9f9f9;
+    border-radius: 16px;
+    border: 2px solid #e0e0e0;
+}
+
+.success-icon {
+    margin-bottom: 30px;
+}
+
+.success-icon svg {
+    display: inline-block;
+    animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.thank-you-box h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.thank-you-text {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.next-steps {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.next-steps h3 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.next-steps ul {
+    list-style: none;
+    padding: 0;
+}
+
+.next-steps li {
+    font-size: 18px;
+    color: #555;
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.next-steps li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-info a {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.btn-home {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 16px 48px;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-home:hover {
+    background: #333;
+    transform: translateY(-2px);
 }
 
 /* Footer */
