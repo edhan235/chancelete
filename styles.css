@@ -284,6 +284,17 @@ strong {
     background: #fff;
 }
 
+.section-mission .section-header h2 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section-mission.visible .section-header h2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .mission-box {
     border: 4px solid #000;
     padding: 64px;
@@ -296,6 +307,30 @@ strong {
     height: 64px;
     border: 4px solid #000;
     margin: -4px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-mission.visible .corner-accent {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.section-mission.visible .corner-accent.top-left {
+    transition-delay: 0.2s;
+}
+
+.section-mission.visible .corner-accent.top-right {
+    transition-delay: 0.4s;
+}
+
+.section-mission.visible .corner-accent.bottom-right {
+    transition-delay: 0.6s;
+}
+
+.section-mission.visible .corner-accent.bottom-left {
+    transition-delay: 0.8s;
 }
 
 .corner-accent.top-left {
@@ -328,6 +363,14 @@ strong {
 
 .mission-content {
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out 1s, transform 0.8s ease-out 1s;
+}
+
+.section-mission.visible .mission-content {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .mission-headline {
