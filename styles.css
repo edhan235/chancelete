@@ -445,6 +445,23 @@ strong {
     background: #f9f9f9;
 }
 
+/* Override fade-section for problem - custom animation for image */
+.section-problem.fade-section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-problem .section-header {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section-problem.visible .section-header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .problem-image {
     text-align: center;
     margin-bottom: 50px;
@@ -455,12 +472,28 @@ strong {
     height: auto;
     border-radius: 16px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s ease-out 0.3s, transform 1s ease-out 0.3s;
+}
+
+.section-problem.visible .problem-image img {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .problem-text {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out 0.8s, transform 0.8s ease-out 0.8s;
+}
+
+.section-problem.visible .problem-text {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .problem-text p {
