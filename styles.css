@@ -570,6 +570,9 @@ strong {
     color: #fff;
     padding: 48px;
     border-radius: 16px;
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
     transition: transform 0.3s;
 }
 
@@ -579,7 +582,9 @@ strong {
 
 .commitment-card h3 {
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
+    min-width: 150px;
+    flex-shrink: 0;
 }
 
 .commitment-card p {
