@@ -1,28 +1,20 @@
-// Hamburger menu toggle
+// Hamburger Menu Toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
 if (hamburger && navLinks) {
-    hamburger.addEventListener('click', function(e) {
-        e.stopPropagation();
+    hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navLinks.classList.toggle('active');
     });
     
-    // Close menu when clicking on a nav link
-    document.querySelectorAll('.nav-link, .btn-apply').forEach(link => {
+    // Close menu when clicking nav links
+    const allNavLinks = document.querySelectorAll('.nav-link, .btn-apply');
+    allNavLinks.forEach(link => {
         link.addEventListener('click', function() {
             hamburger.classList.remove('active');
             navLinks.classList.remove('active');
         });
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-        }
     });
 }
 
