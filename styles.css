@@ -107,7 +107,7 @@ strong {
     font-size: 14px;
     font-weight: 900;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 50px;
     transition: background 0.3s, transform 0.3s;
 }
 
