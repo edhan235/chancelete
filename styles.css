@@ -568,10 +568,10 @@ strong {
 .commitment-card {
     background: #000;
     color: #fff;
-    padding: 24px;
+    padding: 48px;
     border-radius: 12px;
     display: flex;
-    gap: 6px;
+    gap: 100px;
     align-items: flex-start;
     transition: transform 0.3s;
 }
