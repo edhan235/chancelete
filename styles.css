@@ -778,4 +778,17 @@ strong {
     .section-apply {
         padding: 80px 0;
     }
+
+    .chevron-stack {
+    display: flex;
+    flex-direction: column;
+    gap: -4px;
+    animation: chevron-move 2s ease-in-out infinite;
+}
+
+@keyframes chevron-move {
+    0%, 100% { transform: translateY(0); opacity: 0.5; }
+    50% { transform: translateY(8px); opacity: 1; }
+}
+
 }
