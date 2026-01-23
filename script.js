@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
     
     // Parallax zoom effect for hero (zooms in as you scroll down)
     if (scrollTop < windowHeight) {
-        const scale = 1 + (scrollTop / windowHeight) * 0.7;
+        const scale = 1 + (scrollTop / windowHeight) * 0.5;
         heroParallax.style.transform = `scale(${scale})`;
     }
 });
@@ -42,3 +42,15 @@ const fadeObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-section').forEach(section => {
     fadeObserver.observe(section);
 });
+
+// Click hero to scroll to next section
+const hero = document.querySelector('.hero');
+hero.addEventListener('click', function() {
+    document.querySelector('#mission').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+});
+
+// Make cursor pointer on hero
+hero.style.cursor = 'pointer';
