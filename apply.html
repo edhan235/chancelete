@@ -53,7 +53,7 @@
             
             <div id="formMessage" class="form-message"></div>
             
-            <form class="application-form" action="form-handler.php" method="POST">
+            <form class="application-form" action="https://formspree.io/f/mpqporby" method="POST">
                 <div class="form-group">
                     <label for="firstName">First Name *</label>
                     <input type="text" id="firstName" name="firstName" required>
@@ -94,6 +94,10 @@
                     <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
                 </div>
                 
+                <!-- Formspree configuration -->
+                <input type="hidden" name="_next" value="https://www.chanceletes.org/thank-you.html">
+                <input type="hidden" name="_subject" value="New Chanceletes Application">
+                
                 <button type="submit" class="btn-submit">Submit Your Interest</button>
             </form>
             
@@ -121,9 +125,9 @@
                 
                 <div class="footer-contact">
                     <h4>Contact</h4>
-                    <a href="mailto:info@chanceletes.org">info@chanceletes.org</a>
-                    <a href="mailto:apply@chanceletes.org">apply@chanceletes.org</a>
-                    <a href="mailto:holler@chanceletes.org">holler@chanceletes.org</a>
+                    <a href="/cdn-cgi/l/email-protection#4920272f26092a2128272a2c252c3d2c3a67263b2e"><span class="__cf_email__" data-cfemail="e68f888089a6858e878885838a83928395c8899481">[email&#160;protected]</span></a>
+                    <a href="/cdn-cgi/l/email-protection#690819190510290a0108070a0c050c1d0c1a47061b0e"><span class="__cf_email__" data-cfemail="e08190908c99a08388818e83858c85948593ce8f9287">[email&#160;protected]</span></a>
+                    <a href="/cdn-cgi/l/email-protection#b4dcdbd8d8d1c6f4d7dcd5dad7d1d8d1c0d1c79adbc6d3"><span class="__cf_email__" data-cfemail="0b636467676e794b68636a65686e676e7f6e782564796c">[email&#160;protected]</span></a>
                 </div>
             </div>
             
@@ -133,7 +137,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
     <script>
         // Check for error message in URL
         window.addEventListener('DOMContentLoaded', function() {
@@ -143,14 +147,4 @@
             if (urlParams.get('error') === 'missing') {
                 messageDiv.innerHTML = '<p class="error-message">✗ Please fill in all required fields.</p>';
                 messageDiv.style.display = 'block';
-            } else if (urlParams.get('error') === 'email') {
-                messageDiv.innerHTML = '<p class="error-message">✗ Please enter a valid email address.</p>';
-                messageDiv.style.display = 'block';
-            } else if (urlParams.get('error') === 'send') {
-                messageDiv.innerHTML = '<p class="error-message">✗ There was an error submitting your application. Please try again or email us directly at holler@chanceletes.org</p>';
-                messageDiv.style.display = 'block';
-            }
-        });
-    </script>
-</body>
-</html>
+            } else if (urlParams.get('error') === 'ema
